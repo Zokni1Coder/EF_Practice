@@ -16,5 +16,6 @@ namespace EF_Practice.Models
         public ICollection<Motherboard> motherboards { get; set; }
         public ICollection<PS> PSs { get; set; }
         public ICollection<RAM> RAMs { get; set; }
+        public ICollection<ROM> ROMs { get; set; }
     }
 }

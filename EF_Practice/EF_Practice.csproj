@@ -86,7 +86,7 @@
     <Compile Include="Models\CPU_Socket.cs" />
     <Compile Include="Models\GPU.cs" />
     <Compile Include="Models\GPU_frame_sync.cs" />
-    <Compile Include="Models\GPU_Interface.cs" />
+    <Compile Include="Models\Interfaces.cs" />
     <Compile Include="Models\M2.cs" />
     <Compile Include="Models\M2_form_factor.cs" />
     <Compile Include="Models\PS.cs" />
@@ -99,6 +99,9 @@
     <Compile Include="Models\Motherboard.cs" />
     <Compile Include="Models\Motherboard_chipset.cs" />
     <Compile Include="Models\Motherboard_form_factor.cs" />
+    <Compile Include="Models\ROM.cs" />
+    <Compile Include="Models\ROM_form_factor.cs" />
+    <Compile Include="Models\ROM_Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace EF_Practice.Models
 {
-    public class RAM
+    public class ROM
     {
         public int id { get; set; }
         public string model { get; set; }
         public Manufacturer manufacturer { get; set; }
-        public int speed { get; set; }
-        public RAM_type RAM_Type { get; set; }
-        public int modul { get; set; }
-        public int size { get; set; }
-        public int CAS_Latency { get; set; }
-        public double voltage { get; set; }
+        public int capacity { get; set; }
+        public ROM_Type type { get; set; }
+        public ROM_form_factor form_Factor { get; set; }
+        public bool nvme { get; set; }
+        public int? rpm { get; set; }
+        public Interfaces _interface { get; set; }
         public int price { get; set; }
     }
 }

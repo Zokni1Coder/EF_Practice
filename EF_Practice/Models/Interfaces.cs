@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace EF_Practice.Models
 {
-    public class GPU_Interface
+    public class Interfaces
     {
         public int id { get; set; }
-        public string gpu_interface { get; set; }
+        public string interface_type { get; set; }
         public ICollection<GPU> gpus { get; set; }
+        public ICollection<ROM> ROMs { get; set; }
     }
 }
