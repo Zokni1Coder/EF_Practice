@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace EF_Practice.Models
 {
-    public class Manufacturer
+    public class RAM_type
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public ICollection<CPU> CPUs { get; set; }
-        public ICollection<CPU_Cooler> CPU_Coolers { get; set; }
-        public ICollection<GPU> GPUs { get; set; }
+        public string ram_type { get; set; }
+        public ICollection<GPU> gpus { get; set; }
         public ICollection<Motherboard> motherboards { get; set; }
-        public ICollection<PS> PSs { get; set; }
         public ICollection<RAM> RAMs { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace EF_Practice.Models
         public string brand { get; set; }
         public gpu_technology technology { get; set; }
         public int vram { get; set; }
-        public GPU_RAM_type ram_type { get; set; }
+        public RAM_type ram_type { get; set; }
         public int core_clock { get; set; }
         public int boost_clock { get; set; }
         public GPU_Interface gpu_interface { get; set; }

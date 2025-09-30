@@ -87,9 +87,18 @@
     <Compile Include="Models\GPU.cs" />
     <Compile Include="Models\GPU_frame_sync.cs" />
     <Compile Include="Models\GPU_Interface.cs" />
-    <Compile Include="Models\GPU_RAM_type.cs" />
+    <Compile Include="Models\M2.cs" />
+    <Compile Include="Models\M2_form_factor.cs" />
+    <Compile Include="Models\PS.cs" />
+    <Compile Include="Models\PS_form_factor.cs" />
+    <Compile Include="Models\PS_Rating.cs" />
+    <Compile Include="Models\RAM.cs" />
+    <Compile Include="Models\RAM_type.cs" />
     <Compile Include="Models\gpu_technology.cs" />
     <Compile Include="Models\Manufacturer.cs" />
+    <Compile Include="Models\Motherboard.cs" />
+    <Compile Include="Models\Motherboard_chipset.cs" />
+    <Compile Include="Models\Motherboard_form_factor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

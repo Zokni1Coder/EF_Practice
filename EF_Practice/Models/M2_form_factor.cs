@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EF_Practice.Models
 {
-    public class GPU_RAM_type
+    public class M2_form_factor
     {
         public int id { get; set; }
-        public string ram_type { get; set; }
-        public ICollection<GPU> gpus { get; set; }
+        public string form { get; set; }
+        public ICollection<M2> M2s { get; set; }
     }
 }
