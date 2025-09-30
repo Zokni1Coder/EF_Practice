@@ -13,5 +13,9 @@ namespace EF_Practice.Models
 
         public string model { get; set; }
         public Manufacturer manufacturer { get; set; }
+        public int fan_rpm { get; set; }
+        public double noise_level { get; set; }
+        public bool water_cooled { get; set; }
+        public int price { get; set; }
     }
 }

@@ -84,6 +84,11 @@
     <Compile Include="Models\CPU_Microarchitecture.cs" />
     <Compile Include="Models\CPU_Series.cs" />
     <Compile Include="Models\CPU_Socket.cs" />
+    <Compile Include="Models\GPU.cs" />
+    <Compile Include="Models\GPU_frame_sync.cs" />
+    <Compile Include="Models\GPU_Interface.cs" />
+    <Compile Include="Models\GPU_RAM_type.cs" />
+    <Compile Include="Models\gpu_technology.cs" />
     <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
