@@ -12,13 +12,13 @@ namespace EF_Practice.Models
         public string model { get; set; }
         public ICollection<Manufacturer> manufacturer { get; set; }
         public string brand { get; set; }
-        public gpu_technology technology { get; set; }
+        public GPU_technology GPU_technology { get; set; }
         public int vram { get; set; }
         public RAM_type ram_type { get; set; }
         public int core_clock { get; set; }
         public int boost_clock { get; set; }
-        public Interfaces gpu_interface { get; set; }
-        public GPU_frame_sync frame_Sync { get; set; }
+        public Component_interface gpu_interface { get; set; }
+        public GPU_frame_sync GPU_frame_Sync { get; set; }
         public int tdp { get; set; }
         public int hdmi_output { get; set; }
         public int dp_port_output { get; set; }

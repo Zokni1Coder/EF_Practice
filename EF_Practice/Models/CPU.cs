@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     {
         public int id { get; set; }
         public Manufacturer manufacturer { get; set; }
-        public CPU_Series series { get; set; }
+        public CPU_Serie series { get; set; }
         public CPU_Microarchitecture microarchitecture { get; set; }
         public CPU_Socket socket { get; set; }
         public int core_count { get; set; }

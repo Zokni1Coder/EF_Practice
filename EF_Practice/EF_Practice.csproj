@@ -79,14 +79,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202510011012066_PC_ComponentDB-v1.cs" />
+    <Compile Include="Migrations\202510011012066_PC_ComponentDB-v1.Designer.cs">
+      <DependentUpon>202510011012066_PC_ComponentDB-v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CPU.cs" />
     <Compile Include="Models\CPU_Cooler.cs" />
     <Compile Include="Models\CPU_Microarchitecture.cs" />
-    <Compile Include="Models\CPU_Series.cs" />
+    <Compile Include="Models\CPU_Serie.cs" />
     <Compile Include="Models\CPU_Socket.cs" />
     <Compile Include="Models\GPU.cs" />
     <Compile Include="Models\GPU_frame_sync.cs" />
-    <Compile Include="Models\Interfaces.cs" />
+    <Compile Include="Models\Component_interface.cs" />
     <Compile Include="Models\M2.cs" />
     <Compile Include="Models\M2_form_factor.cs" />
     <Compile Include="Models\PS.cs" />
@@ -94,7 +99,7 @@
     <Compile Include="Models\PS_Rating.cs" />
     <Compile Include="Models\RAM.cs" />
     <Compile Include="Models\RAM_type.cs" />
-    <Compile Include="Models\gpu_technology.cs" />
+    <Compile Include="Models\GPU_technology.cs" />
     <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Models\Motherboard.cs" />
     <Compile Include="Models\Motherboard_chipset.cs" />
@@ -115,6 +120,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202510011012066_PC_ComponentDB-v1.resx">
+      <DependentUpon>202510011012066_PC_ComponentDB-v1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

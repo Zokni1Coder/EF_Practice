@@ -12,8 +12,8 @@ namespace EF_Practice.Models
         public Manufacturer manufacturer { get; set; }
         public string model { get; set; }
         public CPU_Socket socket { get; set; }
-        public Motherboard_form_factor form_factor { get; set; }
-        public Motherboard_chipset chipset { get; set; }
+        public Motherboard_form_factor motherboard_form_factor { get; set; }
+        public Motherboard_chipset motherboard_chipset { get; set; }
         public int memory_max { get; set; }
         public RAM_type RAM_Type { get; set; }
         public int memory_slot_no { get; set; }

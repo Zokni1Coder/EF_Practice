@@ -16,7 +16,7 @@ namespace EF_Practice.Models
         public ROM_form_factor form_Factor { get; set; }
         public bool nvme { get; set; }
         public int? rpm { get; set; }
-        public Interfaces _interface { get; set; }
+        public Component_interface _interface { get; set; }
         public int price { get; set; }
     }
 }
