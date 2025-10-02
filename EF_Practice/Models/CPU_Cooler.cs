@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,9 @@ namespace EF_Practice.Models
     public class CPU_Cooler
     {
         public int id { get; set; }
+        [Required]
         public string model { get; set; }
+        [Required]
         public Manufacturer manufacturer { get; set; }
         public int fan_rpm { get; set; }
         public double noise_level { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace EF_Practice.Models
     public class Manufacturer
     {
         public int id { get; set; }
+        [Required]
         public string name { get; set; }
         public ICollection<CPU> CPUs { get; set; }
         public ICollection<CPU_Cooler> CPU_Coolers { get; set; }
