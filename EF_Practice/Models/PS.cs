@@ -15,6 +15,10 @@ namespace EF_Practice.Models
         public PS_Rating rating { get; set; }
         public int wattage { get; set; }
         public bool modularity { get; set; }
+        public string GetModularity()
+        {
+            return modularity ? "true" : "false";
+        }
         public int price { get; set; }
     }
 }

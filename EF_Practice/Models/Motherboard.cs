@@ -11,6 +11,8 @@ namespace EF_Practice.Models
     {
         [Column(name:"MotherboardID",Order = 0)]
         public int id { get; set; }
+        [NotMapped]
+        public string description { get { return $"{this.manufacturer} {this.model} {this.motherboard_chipset} {this.socket} {this.motherboard_form_factor}{this.RAM_Type} "; } }
         [Column(Order = 1)]
         public Manufacturer manufacturer { get; set; }
         [Column(Order = 2)]
@@ -26,10 +28,21 @@ namespace EF_Practice.Models
         public int memory_slot_no { get; set; }
         public int sata_60gbs_no { get; set; }
         public bool onboard_ethernet { get; set; }
+        public string GetEthernet()
+        {
+            return onboard_ethernet ? "yes" : "no"; 
+        }
         public bool wifi { get; set; }
+        public string GetWifi()
+        {
+            return wifi ? "yes" : "no";
+        }
         public bool raid_supp { get; set; }
+        public string GetRaidSupp()
+        {
+            return raid_supp ? "yes" : "no";
+        }
         public int price { get; set; }
-        [Column(Order = 6)]
         public ICollection<M2> M2s { get; set; }
     }
 }
