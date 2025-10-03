@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class CPU_Socket
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string type { get; set; }
         public ICollection<CPU_Cooler> Cooler_compatibility { get; set; }
         public ICollection<CPU> CPUs { get; set; }

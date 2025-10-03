@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class ROM_form_factor
     {
         public int id { get; set; }
-        [Required]  
+        [Required, MaxLength(10)]  
         public string form_factor { get; set; }
         public ICollection<ROM> ROMs { get; set; }
     }

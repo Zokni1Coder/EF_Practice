@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class Manufacturer
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(25)]
         public string name { get; set; }
         public ICollection<CPU> CPUs { get; set; }
         public ICollection<CPU_Cooler> CPU_Coolers { get; set; }

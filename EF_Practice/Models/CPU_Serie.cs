@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class CPU_Serie
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(20)]
         public string serie { get; set; }
         public ICollection<CPU> CPUs { get; set; }
     }

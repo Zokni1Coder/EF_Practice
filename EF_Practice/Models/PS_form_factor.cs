@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class PS_form_factor
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string form { get; set; }
         public ICollection<PS> PSs { get; set; }
     }

@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class Motherboard_chipset
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(15)]
         public string chipset { get; set; }
         public ICollection<Motherboard> motherboards { get; set; }
 

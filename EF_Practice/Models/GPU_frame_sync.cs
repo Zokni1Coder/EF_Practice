@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class GPU_frame_sync
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(25)]
         public string sync { get; set; }
         public ICollection<GPU> gpus { get; set; }
 

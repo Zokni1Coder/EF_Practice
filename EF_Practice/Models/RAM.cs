@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class RAM
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(20)]
         public string model { get; set; }
         [Required]
         public Manufacturer manufacturer { get; set; }

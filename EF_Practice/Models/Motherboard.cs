@@ -16,7 +16,7 @@ namespace EF_Practice.Models
         public string description { get { return $"{this.manufacturer} {this.model} {this.motherboard_chipset} {this.socket} {this.motherboard_form_factor}{this.RAM_Type} "; } }
         [Column(Order = 1),Required]
         public Manufacturer manufacturer { get; set; }
-        [Column(Order = 2),Required]
+        [Column(Order = 2),Required, MaxLength(20)]
         public string model { get; set; }
         [Column(Order = 3), Required]
         public CPU_Socket socket { get; set; }

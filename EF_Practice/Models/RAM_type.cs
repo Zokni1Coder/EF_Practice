@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class RAM_type
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string ram_type { get; set; }
         public ICollection<GPU> gpus { get; set; }
         public ICollection<Motherboard> motherboards { get; set; }

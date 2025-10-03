@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class CPU_Microarchitecture
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(25)]
         public string architecture { get; set; }
         public ICollection<CPU> CPUs { get; set; }
     }

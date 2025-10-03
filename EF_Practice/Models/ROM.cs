@@ -10,7 +10,11 @@ namespace EF_Practice.Models
     public class ROM
     {
         public int id { get; set; }
-        [Required]
+        /// <summary>
+        /// Gets or sets the model of the ROM.
+        /// Example value: 990 Pro, Barracuda Compute,...
+        /// </summary>
+        [Required, MaxLength(25)]
         public string model { get; set; }
         [Required]
         public Manufacturer manufacturer { get; set; }

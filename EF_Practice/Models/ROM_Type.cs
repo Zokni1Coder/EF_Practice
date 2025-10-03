@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class ROM_Type
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(5)]
         public string type { get; set; }
         public ICollection<ROM> ROMs { get; set; }
     }

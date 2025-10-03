@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class PS_Rating
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string rating { get; set; }
         public ICollection<PS> PSs { get; set; }
     }

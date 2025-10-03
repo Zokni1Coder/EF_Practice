@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class GPU_technology
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string technology { get; set; }
         public ICollection<GPU> gpus { get; set; }
     }

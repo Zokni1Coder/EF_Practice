@@ -12,7 +12,10 @@ namespace EF_Practice.Models
     {
         [Column(Order =0)]
         public int id { get; set; }
-        [Required]
+        /// <summary>
+        /// Gets or sets interface types of the component. Example: PCIe, M.2, SATA,...
+        /// </summary>
+        [Required, MaxLength(20)]
         public string interface_type { get; set; }
         public ICollection<GPU> gpus { get; set; }
         public ICollection<ROM> ROMs { get; set; }

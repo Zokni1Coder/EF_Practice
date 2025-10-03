@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class M2_form_factor
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(10)]
         public string form { get; set; }
         public ICollection<M2> M2s { get; set; }
     }

@@ -10,7 +10,7 @@ namespace EF_Practice.Models
     public class Motherboard_form_factor
     {
         public int id { get; set; }
-        [Required]
+        [Required, MaxLength(20)]
         public string form { get; set; }
         public ICollection<Motherboard> motherboards { get; set; }
     }
