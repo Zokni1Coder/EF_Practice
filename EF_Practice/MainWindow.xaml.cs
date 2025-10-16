@@ -20,7 +20,16 @@ namespace EF_Practice
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    /// 
+    ///
+    
+    public class ComponentsDBInitalizer : DropCreateDatabaseAlways<ComponentsContext>
+    {
+        protected override void Seed(ComponentsContext context)
+        {
+            base.Seed(context);
+        }
+    }
+
     public class ComponentsContext : DbContext
     {
         public ComponentsContext() : base("PC_ComponentsConnectionString")
